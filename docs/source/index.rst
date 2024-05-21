@@ -11,6 +11,7 @@ Welcome to the |project|!
    :caption: Contents:
 
    rapid_rapidpy/index.rst
+   geoglows_ecflow/index.rst
 
 Indices and tables
 ==================
