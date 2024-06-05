@@ -7,9 +7,7 @@ Functions
 The function ``postprocess_vpu`` is the main function that is run for this task in the ecFlow job.
 It utilizes the other functions in this module as helpers to accomplish its task.
 
-.. automodule:: geoglows_ecflow.resources.day_one_forecast
-    :members: postprocess_vpu
-    :undoc-members:
+.. autofunction:: geoglows_ecflow.resources.day_one_forecast.postprocess_vpu
 
 .. automodule:: geoglows_ecflow.resources.day_one_forecast
     :members: merge_forecast_qout_files, check_for_return_period_flow, get_time_of_first_exceedance, update_forecast_records

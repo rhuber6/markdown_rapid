@@ -20,7 +20,7 @@ When running ``generate_esri_table.py`` as a script, the following command line 
 
 The daily workspace directory should contain the following:
 
-1. *.runoff.nc IFS forecast files
+1. \*.runoff.nc IFS forecast files
 2. An output directory of routed discharge netcdfs
 3. symlinks to the rapid inputs and return periods directories
 

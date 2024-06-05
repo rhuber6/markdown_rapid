@@ -17,6 +17,7 @@ to build the definition.
 
 .. automodule:: geoglows_ecflow.geoglows_forecast_job
     :members: create
+    :no-index:
 
 The return value is the `ecflow.Defs <https://ecflow.readthedocs.io/en/latest/python_api/Defs.html#ecflow.Defs>`_ object
 for the GEOGLOWS forecast workflow.  The function also creates the job definition file and the directory structure needed
