@@ -14,32 +14,38 @@ Step 1: Initialize the RAPID manager class.
    normally be in the rapid namelist file (this is case sensitive).
 
 .. autoclass:: RAPIDpy.rapid.RAPID
+   :no-index:
 
 
 Step 2 (optional): Add/update additional namelist parameters later
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automethod:: RAPIDpy.rapid.RAPID.update_parameters
+   :no-index:
 
 Step 3 (optional): Update reach number data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automethod:: RAPIDpy.rapid.RAPID.update_reach_number_data
+   :no-index:
 
 Step 4 (optional): Update simulation runtime data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automethod:: RAPIDpy.rapid.RAPID.update_simulation_runtime
+   :no-index:
 
 Step 5: Run RAPID
 ~~~~~~~~~~~~~~~~~
 
 .. automethod:: RAPIDpy.rapid.RAPID.run
+   :no-index:
 
 Step 6 (optional): Convert RAPID output to be CF Compliant
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automethod:: RAPIDpy.rapid.RAPID.make_output_cf_compliant
+   :no-index:
 
 
 Full API Description
