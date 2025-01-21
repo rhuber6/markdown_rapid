@@ -1,0 +1,39 @@
+site_name: GEOGLOWS Developer Guide
+theme:
+  name: material
+  palette:
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+
+nav:
+  - Home: index.md
+  - rapidPy:
+      - Home: rapid_rapidpy/index.md
+      - Installation: rapid_rapidpy/installation.md
+      - Running Rapid: rapid_rapidpy/running_rapid.md
+  - geoglows_ecflow:
+      - Home: geoglows_ecflow/index.md
+      - Installation: geoglows_ecflow/installation.md
+      - Running GEOGLOWS ecFlow Locally: geoglows_ecflow/running_geoglows_ecflow_locally.md
+      - Ecflow: geoglows_ecflow/ecflow.md
+      - GEOGLOWS Forecast Job: geoglows_ecflow/geoglows_forecast_job.md
+      - Client: geoglows_ecflow/client.md
+      - Utils: geoglows_ecflow/utils.md
+
+
