@@ -66,12 +66,23 @@ Downloaded Cygwin (64-bit) (https://www.cygwin.com/) with these dependencies:
 
 5. Restart Terminal
 
-6. Build RAPID:
+6. Set up environment variables:
+
+    ```bash
+    export NETCDF_LIB='-L /usr/lib -lnetcdff'
+    export NETCDF_INCLUDE='-I /usr/include'
+    export PETSC_DIR=$HOME/installz/petsc-3.13.6
+    export PETSC_ARCH=linux-gcc-c
+    export PATH=$PATH:$PETSC_DIR/$PETSC_ARCH/bin
+    ```
+
+7. Build RAPID:
 
     ```bash
     cd rapid/src
     make rapid
     ```
+
 
 ## Step 2: Install RAPIDpy
 

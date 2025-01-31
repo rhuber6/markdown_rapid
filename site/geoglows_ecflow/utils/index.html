@@ -12,6 +12,8 @@
         <link rel="prev" href="../client/">
       
       
+        <link rel="next" href="../resources/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
@@ -454,7 +456,7 @@
         
   
   <span class="md-ellipsis">
-    Ecflow
+    ecFlow
   </span>
   
 
@@ -621,6 +623,280 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/archive_to_aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    archive_to_aws
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/combine_esri_tables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    combine_esri_tables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/compute_init_flows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    compute_init_flows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/concat_forecast_warnings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    concat_forecast_warnings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/day_one_forecast/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    day_one_forecast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/generate_esri_table/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    generate_esri_table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/helper_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    helper_functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/netcdf_to_zarr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    netcdf_to_zarr
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/prep_rapid_forecast/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    prep_rapid_forecast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/run_rapid_forecast/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    run_rapid_forecast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -730,7 +1006,7 @@ It's likely that you won't need to use any of these functions yourself when usin
 <p>The <code>geoglows_ecflow.utils.load_config</code> function is used to load the :ref:<code>config.yml &lt;config_yml_ref&gt;</code> configuration file that is used by the geoglows_ecflow package.</p>
 <p>The code below shows a brief example of how to use the <code>geoglows_ecflow.utils.load_config</code> function.
 It also demonstrates how to access some of the configuration values that are loaded from the :ref:<code>config.yml &lt;config_yml_ref&gt;</code> configuration file.</p>
-<div class="highlight"><pre><span></span><code>from geoglows_ecflow.utils import load_config
+<div class="language-text highlight"><pre><span></span><code>from geoglows_ecflow.utils import load_config
 
 # Read in the configuration file
 config = load_config(&#39;path/to/config.yml&#39;)
@@ -757,7 +1033,7 @@ Normally, this structure is defined in the :ref:<code>config.yml &lt;config_yml_
 symlinks for the tasks within a specific family.</p>
 <p>It is used by geoglows_ecflow to create symlinks for all tasks as illustrated
 in the code example below:</p>
-<div class="highlight"><pre><span></span><code># Imports
+<div class="language-text highlight"><pre><span></span><code># Imports
 from geoglows_ecflow.utils import create_symlinks_for_family_tasks
 
 # Create symlinks for all tasks
@@ -779,7 +1055,7 @@ The values in the variable <code>vpu_list</code> can be retrieved by using the :
 <p>The <code>geoglows_ecflow.utils.add_variables</code> function is a convienence function that can be used to add variables to an ecFlow entity.</p>
 <p>Suites, families, and tasks can all have variables added to them. This function allows you to add multiple variables to an entity
 with a single function call.</p>
-<div class="highlight"><pre><span></span><code># Imports
+<div class="language-text highlight"><pre><span></span><code># Imports
 from ecflow import Suite
 from geoglows_ecflow.utils import add_variables
 
@@ -842,7 +1118,7 @@ add_variables(suite, suite_variables)
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>

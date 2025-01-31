@@ -541,7 +541,7 @@
         
   
   <span class="md-ellipsis">
-    Ecflow
+    ecFlow
   </span>
   
 
@@ -609,6 +609,280 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/archive_to_aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    archive_to_aws
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/combine_esri_tables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    combine_esri_tables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/compute_init_flows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    compute_init_flows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/concat_forecast_warnings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    concat_forecast_warnings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/day_one_forecast/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    day_one_forecast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/generate_esri_table/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    generate_esri_table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/helper_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    helper_functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/netcdf_to_zarr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    netcdf_to_zarr
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/prep_rapid_forecast/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    prep_rapid_forecast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/run_rapid_forecast/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    run_rapid_forecast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -717,7 +991,7 @@ create and set up the following configuration files.</p>
 </ul>
 <p>These configuration files are detailed below.</p>
 <h2 id="geoglows_ecflow-configuration-file-configyml">geoglows_ecflow Configuration File (config.yml)</h2>
-<div class="highlight"><pre><span></span><code># ecflow variables
+<div class="language-text highlight"><pre><span></span><code># ecflow variables
 python_exec: /path/to/python
 ecflow_home: /path/to/ecflow_home
 ecflow_bin: /path/to/ecflow_client  # Required for local run
@@ -801,7 +1075,7 @@ nces_exec: /path/to/nces_exec
 aws_config: /path/to/aws_config.yml
 </code></pre></div>
 <h2 id="aws-configuration-file-aws_configyml">AWS Configuration File (aws_config.yml)</h2>
-<div class="highlight"><pre><span></span><code># aws credentials
+<div class="language-text highlight"><pre><span></span><code># aws credentials
 aws_access_key_id: AWS_ACCESS_KEY_ID
 aws_secret_access_key: AWS_SECRET_ACCESS_KEY
 
@@ -810,14 +1084,14 @@ bucket_forecast_archive: S3_BUCKET_NAME
 bucket_maptable_archive: S3_BUCKET_NAME
 </code></pre></div>
 <h2 id="custom-ecflow-server-start-local_ecflow_startsh">Custom ecflow Server Start (local_ecflow_start.sh)</h2>
-<div class="highlight"><pre><span></span><code>#!/bin/bash
+<div class="language-text highlight"><pre><span></span><code>#!/bin/bash
 export ECF_PORT=2500
 export ECF_HOST=localhost
 
 ecflow_start.sh -d /path/to/ecflow_home
 </code></pre></div>
 <h2 id="local-run-example">Local Run Example</h2>
-<div class="highlight"><pre><span></span><code>import subprocess
+<div class="language-text highlight"><pre><span></span><code>import subprocess
 from geoglows_ecflow import geoglows_forecast_job, client
 
 # Start server
@@ -834,7 +1108,7 @@ client.begin(&quot;definition_name&quot;)
 </code></pre></div>
 <h2 id="run-tests">Run Tests</h2>
 <p>Run the following commands in your terminal</p>
-<div class="highlight"><pre><span></span><code>cd geoglows_ecflow/
+<div class="language-text highlight"><pre><span></span><code>cd geoglows_ecflow/
 pip install -e .[test]
 
 # run tests
@@ -889,7 +1163,7 @@ pytests --cov geoglows_ecflow tests/
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
