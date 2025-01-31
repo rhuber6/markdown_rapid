@@ -50,7 +50,7 @@ Downloaded Cygwin (64-bit) (https://www.cygwin.com/) with these dependencies:
     mkdir ~/installz
     ```
 
-3. Install Prereqs:
+3. Install Prereqs. Make sure to replace your path with "path/to/installz":
 
     ```bash
     cd rapid
@@ -58,7 +58,7 @@ Downloaded Cygwin (64-bit) (https://www.cygwin.com/) with these dependencies:
     ./rapid_install_prereqs.sh -i="path/to/installz"
     ```
 
-4. Append `source rapid_specify_varpath.sh` to the `~/.bashrc` or `~/.bash_profile`:
+4. Append `source rapid_specify_varpath.sh` to the `~/.bashrc` or `~/.bash_profile`. Replace with your path to rapid_specify_varpath.sh:
 
     ```bash
     source /path/to/cloned/rapid/rapid_specify_varpath.sh
