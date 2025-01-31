@@ -1,5 +1,7 @@
 site_name: GEOGLOWS Developer Guide
 theme:
+  features:
+    - content.code.copy
   name: material
   palette:
 
@@ -31,9 +33,28 @@ nav:
       - Home: geoglows_ecflow/index.md
       - Installation: geoglows_ecflow/installation.md
       - Running GEOGLOWS ecFlow Locally: geoglows_ecflow/running_geoglows_ecflow_locally.md
-      - Ecflow: geoglows_ecflow/ecflow.md
+      - ecFlow: geoglows_ecflow/ecflow.md
       - GEOGLOWS Forecast Job: geoglows_ecflow/geoglows_forecast_job.md
       - Client: geoglows_ecflow/client.md
       - Utils: geoglows_ecflow/utils.md
+      - Resources:
+          - Home: geoglows_ecflow/resources/index.md
+          - archive_to_aws: geoglows_ecflow/resources/archive_to_aws.md
+          - combine_esri_tables: geoglows_ecflow/resources/combine_esri_tables.md
+          - compute_init_flows: geoglows_ecflow/resources/compute_init_flows.md
+          - concat_forecast_warnings: geoglows_ecflow/resources/concat_forecast_warnings.md
+          - day_one_forecast: geoglows_ecflow/resources/day_one_forecast.md
+          - generate_esri_table: geoglows_ecflow/resources/generate_esri_table.md
+          - helper_functions: geoglows_ecflow/resources/helper_functions.md
+          - netcdf_to_zarr: geoglows_ecflow/resources/netcdf_to_zarr.md
+          - prep_rapid_forecast: geoglows_ecflow/resources/prep_rapid_forecast.md
+          - run_rapid_forecast: geoglows_ecflow/resources/run_rapid_forecast.md
 
-
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

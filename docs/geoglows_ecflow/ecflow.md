@@ -29,7 +29,7 @@ A suite definition is built up of tasks, families, and a suite. Tasks, families,
 can be thought of as a tree like structure where the suite is the root of the tree, families
 are the branches, and tasks are the leaves. The image below shows a visual representation of this structure.
 
-![Alt text](../_static/ecflow_suite_structure.png)
+![Alt text](ecflow_suite_structure.png)
 
 Next we'll go over each of these components in more detail. We will take a bottom up approach and start with tasks.
 

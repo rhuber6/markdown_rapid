@@ -34,4 +34,8 @@ DOI: [10.1111/1752-1688.12456](https://doi.org/10.1111/1752-1688.12456)
 
 Ahmad A Tavakoly. (2017). RAPID input files corresponding to the Mississippi River Basin using the NHDPlus v2 Dataset [Data set]. Zenodo. [http://doi.org/10.5281/zenodo.322886](http://doi.org/10.5281/zenodo.322886) [![Mississippi Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.322886.svg)](https://doi.org/10.5281/zenodo.322886)
 
-## Other tools to
+## Other tools to prepare input for RAPID
+
+- For ESRI users: [https://github.com/Esri/python-toolbox-for-rapid](https://github.com/Esri/python-toolbox-for-rapid)
+- Modified version of the ESRI RAPID Toolbox: [https://github.com/erdc/python-toolbox-for-rapid](https://github.com/erdc/python-toolbox-for-rapid)
+- For the NHDPlus dataset: [https://github.com/c-h-david/RRR](https://github.com/c-h-david/RRR)

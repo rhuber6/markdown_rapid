@@ -1,5 +1,3 @@
-.. _geoglows_ecflow.client:
-
 geoglows_ecflow.client
 ======================
 

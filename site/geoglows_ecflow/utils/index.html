@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../geoglows_forecast_job/">
+        <link rel="prev" href="../client/">
       
       
       
@@ -433,28 +433,7 @@
         
   
   <span class="md-ellipsis">
-    Running GEOGLOWS eCFLOW
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../client/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Client
+    Running GEOGLOWS ecFlow Locally
   </span>
   
 
@@ -496,7 +475,28 @@
         
   
   <span class="md-ellipsis">
-    GEOGLOWS Forecast
+    GEOGLOWS Forecast Job
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client
   </span>
   
 
@@ -730,21 +730,21 @@ It's likely that you won't need to use any of these functions yourself when usin
 <p>The <code>geoglows_ecflow.utils.load_config</code> function is used to load the :ref:<code>config.yml &lt;config_yml_ref&gt;</code> configuration file that is used by the geoglows_ecflow package.</p>
 <p>The code below shows a brief example of how to use the <code>geoglows_ecflow.utils.load_config</code> function.
 It also demonstrates how to access some of the configuration values that are loaded from the :ref:<code>config.yml &lt;config_yml_ref&gt;</code> configuration file.</p>
-<pre><code>from geoglows_ecflow.utils import load_config
+<div class="highlight"><pre><span></span><code>from geoglows_ecflow.utils import load_config
 
 # Read in the configuration file
-config = load_config('path/to/config.yml')
+config = load_config(&#39;path/to/config.yml&#39;)
 
 # Access some of the configuration values
-python_exec = config["python_exec"]
-ecflow_home = config["ecflow_home"]
-ecflow_bin = config.get("ecflow_bin")
-workspace = config["workspace"]
-local_run = config.get("local_run")
-ecflow_entities = config["ecflow_entities"]
-ecflow_suite = config["ecflow_entities"]["suite"]["name"]
+python_exec = config[&quot;python_exec&quot;]
+ecflow_home = config[&quot;ecflow_home&quot;]
+ecflow_bin = config.get(&quot;ecflow_bin&quot;)
+workspace = config[&quot;workspace&quot;]
+local_run = config.get(&quot;local_run&quot;)
+ecflow_entities = config[&quot;ecflow_entities&quot;]
+ecflow_suite = config[&quot;ecflow_entities&quot;][&quot;suite&quot;][&quot;name&quot;]
 ...
-</code></pre>
+</code></pre></div>
 <h2 id="geoglows_ecflowutilsprepare_dir_structure">geoglows_ecflow.utils.prepare_dir_structure</h2>
 <p>The <code>geoglows_ecflow.utils.prepare_dir_structure</code> function is used to create the directory structure that is
 used by the ecFlow job.</p>
@@ -757,7 +757,7 @@ Normally, this structure is defined in the :ref:<code>config.yml &lt;config_yml_
 symlinks for the tasks within a specific family.</p>
 <p>It is used by geoglows_ecflow to create symlinks for all tasks as illustrated
 in the code example below:</p>
-<pre><code># Imports
+<div class="highlight"><pre><span></span><code># Imports
 from geoglows_ecflow.utils import create_symlinks_for_family_tasks
 
 # Create symlinks for all tasks
@@ -771,7 +771,7 @@ task_family_list = [
 ]
 
 create_symlinks_for_family_tasks(ecflow_home, ecflow_suite, task_family_list, vpu_list)
-</code></pre>
+</code></pre></div>
 <p>The variables <code>ecflow_home</code> and <code>ecflow_suite</code> both get their values from the :ref:<code>config.yml &lt;config_yml_ref&gt;</code> configuration file.
 The geoglows_ecflow package finds the names that populate the <code>task_family_list</code> from the :ref:<code>config.yml &lt;config_yml_ref&gt;</code> configuration file as well.
 The values in the variable <code>vpu_list</code> can be retrieved by using the :func:<code>geoglows_ecflow.resources.helper_functions.get_valid_vpucode_list</code> function.</p>
@@ -779,21 +779,21 @@ The values in the variable <code>vpu_list</code> can be retrieved by using the :
 <p>The <code>geoglows_ecflow.utils.add_variables</code> function is a convienence function that can be used to add variables to an ecFlow entity.</p>
 <p>Suites, families, and tasks can all have variables added to them. This function allows you to add multiple variables to an entity
 with a single function call.</p>
-<pre><code># Imports
+<div class="highlight"><pre><span></span><code># Imports
 from ecflow import Suite
 from geoglows_ecflow.utils import add_variables
 
 # Create our suite
-suite = ecflow.Suite("s1")
+suite = ecflow.Suite(&quot;s1&quot;)
 
 # Add variables to the suite using add_variables
 suite_variables = {
-    "ECF_INCLUDE": 'path/to/directory',
-    "WORKSPACE": 'path/to/workspace/'
+    &quot;ECF_INCLUDE&quot;: &#39;path/to/directory&#39;,
+    &quot;WORKSPACE&quot;: &#39;path/to/workspace/&#39;
 }
 
 add_variables(suite, suite_variables)
-</code></pre>
+</code></pre></div>
 <h2 id="geoglows_ecflowutilsvalidate">geoglows_ecflow.utils.validate</h2>
 <p>The <code>geoglows_ecflow.utils.validate</code> function can be used to validate your job definition.</p>
 

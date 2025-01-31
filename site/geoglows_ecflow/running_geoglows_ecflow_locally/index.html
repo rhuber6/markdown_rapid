@@ -12,7 +12,7 @@
         <link rel="prev" href="../installation/">
       
       
-        <link rel="next" href="../client/">
+        <link rel="next" href="../ecflow/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Running GEOGLOWS eCFLOW - GEOGLOWS Developer Guide</title>
+        <title>Running GEOGLOWS ecFlow Locally - GEOGLOWS Developer Guide</title>
       
     
     
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Running GEOGLOWS eCFLOW
+              Running GEOGLOWS ecFlow Locally
             
           </span>
         </div>
@@ -444,7 +444,7 @@
           
   
   <span class="md-ellipsis">
-    Running GEOGLOWS eCFLOW
+    Running GEOGLOWS ecFlow Locally
   </span>
   
 
@@ -455,7 +455,7 @@
         
   
   <span class="md-ellipsis">
-    Running GEOGLOWS eCFLOW
+    Running GEOGLOWS ecFlow Locally
   </span>
   
 
@@ -537,27 +537,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../client/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Client
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../ecflow/" class="md-nav__link">
         
   
@@ -583,7 +562,28 @@
         
   
   <span class="md-ellipsis">
-    GEOGLOWS Forecast
+    GEOGLOWS Forecast Job
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client
   </span>
   
 
@@ -707,7 +707,6 @@
                   
 
 
-<p>.. _geoglows_ecflow.running_geoglows_ecflow_locally:</p>
 <h1 id="running-geoglows_ecflow-locally">Running geoglows_ecflow Locally</h1>
 <p>In order to run the geoglows_ecflow package you will need to 
 create and set up the following configuration files.</p>
@@ -718,7 +717,7 @@ create and set up the following configuration files.</p>
 </ul>
 <p>These configuration files are detailed below.</p>
 <h2 id="geoglows_ecflow-configuration-file-configyml">geoglows_ecflow Configuration File (config.yml)</h2>
-<pre><code># ecflow variables
+<div class="highlight"><pre><span></span><code># ecflow variables
 python_exec: /path/to/python
 ecflow_home: /path/to/ecflow_home
 ecflow_bin: /path/to/ecflow_client  # Required for local run
@@ -800,42 +799,42 @@ nces_exec: /path/to/nces_exec
 
 # aws variables
 aws_config: /path/to/aws_config.yml
-</code></pre>
+</code></pre></div>
 <h2 id="aws-configuration-file-aws_configyml">AWS Configuration File (aws_config.yml)</h2>
-<pre><code># aws credentials
+<div class="highlight"><pre><span></span><code># aws credentials
 aws_access_key_id: AWS_ACCESS_KEY_ID
 aws_secret_access_key: AWS_SECRET_ACCESS_KEY
 
 # aws s3 bucket
 bucket_forecast_archive: S3_BUCKET_NAME
 bucket_maptable_archive: S3_BUCKET_NAME
-</code></pre>
+</code></pre></div>
 <h2 id="custom-ecflow-server-start-local_ecflow_startsh">Custom ecflow Server Start (local_ecflow_start.sh)</h2>
-<pre><code>#!/bin/bash
+<div class="highlight"><pre><span></span><code>#!/bin/bash
 export ECF_PORT=2500
 export ECF_HOST=localhost
 
 ecflow_start.sh -d /path/to/ecflow_home
-</code></pre>
+</code></pre></div>
 <h2 id="local-run-example">Local Run Example</h2>
-<pre><code>import subprocess
+<div class="highlight"><pre><span></span><code>import subprocess
 from geoglows_ecflow import geoglows_forecast_job, client
 
 # Start server
-subprocess.run(['bash', '/path/to/local_server_start.sh'])
+subprocess.run([&#39;bash&#39;, &#39;/path/to/local_server_start.sh&#39;])
 
 # Create definition
-geoglows_forecast_job.create("/path/to/config.yml")
+geoglows_forecast_job.create(&quot;/path/to/config.yml&quot;)
 
 # Add definition to server
-client.add_definition("/path/to/definition.def", "&lt;HOST&gt;:&lt;PORT&gt;")
+client.add_definition(&quot;/path/to/definition.def&quot;, &quot;&lt;HOST&gt;:&lt;PORT&gt;&quot;)
 
 # Begin definition
-client.begin("definition_name")
-</code></pre>
+client.begin(&quot;definition_name&quot;)
+</code></pre></div>
 <h2 id="run-tests">Run Tests</h2>
 <p>Run the following commands in your terminal</p>
-<pre><code>cd geoglows_ecflow/
+<div class="highlight"><pre><span></span><code>cd geoglows_ecflow/
 pip install -e .[test]
 
 # run tests
@@ -843,7 +842,7 @@ pytests tests/
 
 # run tests with coverage
 pytests --cov geoglows_ecflow tests/
-</code></pre>
+</code></pre></div>
 
 
 

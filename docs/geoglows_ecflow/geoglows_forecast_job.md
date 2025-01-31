@@ -1,5 +1,3 @@
-.. _geoglows_ecflow.geoglows_forecast_job:
-
 # geoglows_ecflow.geoglows_forecast_job
 
 The geoglows_forecast_job module provides functions for creating the 
